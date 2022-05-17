@@ -112,3 +112,13 @@
 		color: 'blue'
 	}
 ];
+
+
+// Milestone 1
+// Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell'icona e l'icona stessa.
+
+// Seleziono il container da DOM
+const container = document.querySelector("#container")
+
+// Seleziono il template dal DOM
+const squareHtml = document.querySelectorAll(".box-js").content

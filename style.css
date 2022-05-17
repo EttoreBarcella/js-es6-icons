@@ -25,18 +25,28 @@
 }
 
 /* MAIN */
-.container, .square{
+#container, .square{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.container {
+#container {
     flex-flow: row wrap;
-    background-color: rgb(197, 196, 196);
+    background-color: rgb(216, 216, 216);
+    padding: 40px;
     gap: 20px;
+
 }
 .square {
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
     border-radius: 20px;
 }
+
+.square span {
+    text-transform: uppercase;
+    display: block;
+    font-weight:400;
+    padding-top: 10px;
+    font-size: 25px;
+  }

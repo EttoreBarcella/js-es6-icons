@@ -1,4 +1,4 @@
-[
+const icons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -121,4 +121,14 @@
 const container = document.querySelector("#container")
 
 // Seleziono il template dal DOM
-const squareHtml = document.querySelectorAll(".box-js").content
+const templHtml = document.querySelectorAll(".box-js").content
+
+icons.forEach((e) => {
+	const squareHtml = templHtml.cloneNode(true)
+	//creo classe id
+	const classId = `fa-solid ${e.prefix}${e.name}`
+	squareHtml.querySelector(".square i").classId = classId
+	squareHtml.querySelector(".square i").style.color = e.color
+	squareHtml.querySelector(".square span").textContent = e.name
+	container.append(squareHtml)
+  })

@@ -1,0 +1,25 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.header-top, .header-bottom {
+    padding: 20px;
+}
+
+.header-top{
+    color: rgb(24, 219, 226);
+    
+  }
+.header-bottom {
+    display: flex;
+    color: white;
+    background-color: rgb(24, 219, 226);
+    gap: 20px;
+    justify-content: center;
+    text-transform: uppercase;
+}
